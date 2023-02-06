@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    background: #080808;
+    color: rgb(226, 30, 30);
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 50px 10%;
+}
+nav{
+    margin-left: 27%;
+    padding: 5px 40%;
+    display: flex;
+    align-items: space-between;
+
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px ;
+    
+}
+nav li a{
+    text-decoration: none;
+    font-size: medium;
+    position: relative;
+}
+nav li a::after{
+    content: ' ';
+    
+    width: 0%;
+    height: 3px;
+    border-radius: 80px;
+    position: absolute;
+    background: linear-gradient(rgb(12, 246, 4),rgb(167, 164, 2));
+    
+    left:0;
+    bottom: -6px;
+    transition:0.2s;
+}
+nav li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.header-text p {
+    margin-top:2%;
+    margin-bottom: 5%;
+}
+.header-text h1 span{
+    color: aquamarine;
+}
+.profile{
+   border-style: solid;
+   border-width: 2;
+   border-color: aquamarine;
+
+}
+.profile p{
+    margin: 2%;
+    text-align: justify;
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/*                                           about Page                                                                      */
+*{
+    background: #080808;
+}
+.about{
+    padding: 50PX 10%;
+    padding-top: 5%;
+}
+.about h1{
+    text-align: center;
+    margin-bottom: 5%;
+    color: rgba(83, 173, 173, 0.785);
+}
+.about P{
+    margin-left: 10%;
+    height: 40%;
+    width: 80%;
+    font-size: 40px;
+    text-align: justify;
+    
+}
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/*                                                   contact                                                              */
+.buttons{
+   margin-left: 40%;
+}
+.buttons div{
+    margin:20% ;
+}
+.buttonLinkedin{
+   box-sizing: border-box;
+   background-color: rgb(94, 146, 146);
+}
+.buttonGithub{
+   background-color: aquamarine;
+}
+.buttonPortfolio{
+   background-color: azure;
+}
